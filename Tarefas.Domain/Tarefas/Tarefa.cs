@@ -1,4 +1,4 @@
-﻿namespace Tarefas.Domain.Tarefa
+﻿namespace Tarefas.Domain.Tarefas
 {
     public class Tarefa
     {
@@ -8,7 +8,7 @@
 
         public bool Concluida { get; private set; }
         public string DonoId { get; private set; }
-        public DateTimeOffset DataCriacao { get; private set; }
+        public DateTime DataCriacao { get; private set; }
 
         private Tarefa() { }
 

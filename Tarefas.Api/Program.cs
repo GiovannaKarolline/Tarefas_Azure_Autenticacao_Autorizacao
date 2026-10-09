@@ -1,4 +1,17 @@
+using Tarefas.Api.Auth;
+using Tarefas.Application;
+using Tarefas.Application.Abstractions.Usuario;
+using Tarefas.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddScoped<ICurrentUser, CurrentUser>();
+
+builder.Services.AddApplication();
+
+builder.Services.AddInfrastructure(builder.Configuration);
 
 // Add services to the container.
 
