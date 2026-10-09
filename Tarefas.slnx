@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Tarefas.Api/Tarefas.Api.csproj" />
+  <Project Path="Tarefas.Application/Tarefas.Application.csproj" />
+  <Project Path="Tarefas.Domain/Tarefas.Domain.csproj" />
+  <Project Path="Tarefas.Infrastructure/Tarefas.Infrastructure.csproj" />
+</Solution>
